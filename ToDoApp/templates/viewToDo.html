@@ -1,0 +1,175 @@
+ {% extends 'base.html' %}
+
+   {% block content %}
+
+
+
+
+        <div class="container-fluid head">
+            <div class="row">
+              <div class="col-2">
+                <p class="head_title">Title</p>
+              </div>
+              <div class="col-4 ">
+                <p class="head_desc">Description</p>
+              </div>
+              <div class="col-2 ">
+                <p class="head_priority">Priority</p>
+              </div>
+              <div class="col-2 ">
+                <p class="head_due">Due Date</p>
+              </div>
+              <div class="col-2 ">
+                <div class="iconsView">
+                    
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TITLE  1 -->
+
+          <br><br>
+
+          <div class="container-fluid  bodyColor">
+            <div class="row">
+              <div class="col-2 listMargin">
+                <p class="userToDo ">Task 1</p>
+              </div>
+              <div class="col-4 listMargin">
+                <p class="userToDo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="col-2 listMargin">
+                <p class="userToDo">High</p>
+              </div>
+              <div class="col-2 listMargin">
+                <p class="userToDo">07/15/2023 10:03 PM</p>
+              </div>
+              <div class="col-2 listMargin listMargin">
+                <div class="iconsView">
+                    <button class="btn"><i class="fa fa-check-circle tick" aria-hidden="true"></i></button>
+                    <button class="btn"><i class="fas fa-edit colorr"></i></button>
+                    <button class="btn"><i class="fa fa-trash remove" aria-hidden="true"></i></button>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- TITLE 2 -->
+
+          <br><br>
+
+          <div class="container-fluid bodyColor">
+            <div class="row">
+              <div class="col-2 listMargin">
+                <p class="userToDo">Task 1</p>
+              </div>
+              <div class="col-4 listMargin">
+                <p class="userToDo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="col-2 listMargin">
+                <p class="userToDo">High</p>
+              </div>
+              <div class="col-2 listMargin">
+                <p class="userToDo">07/15/2023 10:03 PM</p>
+              </div>
+              <div class="col-2 listMargin">
+                <div class="iconsView listMargin">
+                    <button class="btn"><i class="fa fa-check-circle tick" aria-hidden="true"></i></button>
+                    <button class="btn"><i class="fas fa-edit colorr"></i></button>
+                    <button class="btn"><i class="fa fa-trash remove" aria-hidden="true"></i></button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Title 3 -->
+
+          <br><br>
+
+          <div class="container-fluid bodyColor">
+            <div class="row">
+              <div class="col-2 listMargin">
+                <p class="userToDo">Task 1</p>
+              </div>
+              <div class="col-4 listMargin">
+                <p class="userToDo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div class="col-2">
+                <p class="userToDo listMargin">High</p>
+              </div>
+              <div class="col-2">
+                <p class="userToDo listMargin">07/15/2023 10:03 PM</p>
+              </div>
+              <div class="col-2">
+                <div class="iconsView ">
+                    
+                    <button class="btn"><i class="fa fa-check-circle tick" aria-hidden="true"></i></button>
+                    <button class="btn"><i class="fas fa-edit colorr"></i></button>
+                    <button class="btn"><i class="fa fa-trash remove" aria-hidden="true"></i></button>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <br> <br> <br>
+
+          <div class="pageLink disFlex">
+
+            <button onclick="goToHome()" type="button" class="btn btn-danger backBttn">Back</button>
+
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+         
+
+        </div>
+
+
+
+
+          
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+ {%  endblock %}

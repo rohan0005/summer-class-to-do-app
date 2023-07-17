@@ -1,0 +1,28 @@
+.msg p{
+    color: #05AB2A;
+}
+
+.rmv{
+    padding-left: 84px;
+}
+
+.completedLst
+{
+    
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    background-color: rebeccapurple;
+
+}
+
+.CompletedBtn
+{
+    font-size: 27px;
+}
+.cmpBtn{
+    margin-top: 5px;
+    margin-left: 90px;
+}

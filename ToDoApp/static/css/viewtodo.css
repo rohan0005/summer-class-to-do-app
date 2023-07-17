@@ -1,0 +1,102 @@
+.container-fluid {
+
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head{
+    background-color: #D9D9D9;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.head_title
+{
+    color: #005EEC;
+}
+
+.head_desc{
+    color: #00de59;
+}
+
+.head_priority{
+    color: #0043A8;
+}
+
+.head_due{
+    color: #fa5c00;
+}
+
+.userToDo{
+    font-size: 18px;
+    color: rgb(43, 36, 36);
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.listMargin
+{
+    margin-top: 10px;
+}
+
+
+.pageLink{
+
+    margin-left: 80px;
+    justify-content: space-around;
+}
+
+.backBttn
+{
+    margin-left: 10px;
+   
+
+}
+
+
+
+.iconsView
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .iconsView i {
+    margin-right: 13px;
+} */
+
+.tick
+{
+    color: #10ea55;
+    font-size: 23px;
+}
+
+.colorr
+{
+    color: #005EEC;
+    font-size: 23px;
+}
+
+.remove
+{
+    color: #fe4c06;
+    font-size: 23px;
+}
+
+.bodyColor
+{
+    background-color: #efefef;
+}
+
+.disFlex
+{
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+
+
+

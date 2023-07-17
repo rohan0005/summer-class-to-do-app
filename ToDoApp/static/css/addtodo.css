@@ -1,0 +1,176 @@
+.miniContainer{
+
+    
+    
+}
+
+
+.endDate
+{
+  margin-left: 286px;
+}
+
+
+
+.titleDiv
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 330px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    align-items: center;
+    
+    color: #565373;
+}
+
+.right_item
+{
+    margin-left: 330px;
+    
+}
+
+.TitleT
+{
+  margin-left: -4px;
+}
+
+
+
+.titleField
+{
+    height: 60px;
+    width: 250px;
+    text-align:start;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+  box-shadow:0 0 15px 4px rgba(201, 168, 168, 0.06);
+  padding-left: 14px;
+  border-radius: 4px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.titleField:focus,
+.titleField:active {
+      outline: none; /* Remove the default outline */
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      border-color: rgba(82, 192, 252, 0.901); /* Change the border color */
+
+}
+.selectItem{
+    
+    margin-left: -29px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 200px; 
+    height: 41px;
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+}
+
+
+
+.startDate
+{
+    margin-left: -44px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 206px; 
+    height: 38px;
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+}
+
+.selectItem:focus,
+.selectItem:active,
+.startDate:focus,
+.startDate:active,
+.desc:focus,
+.desc:active 
+
+{
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: rgba(82, 192, 252, 0.901); /* Change the border color */
+
+}
+
+.desc
+{
+    margin-left: -69px;
+    height: 100px;
+    width: 250px;
+    text-align:start;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+  box-shadow:0 0 15px 4px rgba(201, 168, 168, 0.06);
+  border-radius: 4px;
+  line-height: 1.5;
+  font-size: 20px;
+  resize: none;
+}
+
+.addtolist
+{
+    background-color: #d8c429;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+
+  .addtolist:hover {
+    background-color: #e1cd34;
+
+  }
+
+  .divAdd
+  {
+    justify-content: space-between;
+    display: flex;
+    text-align: end;
+    margin-right: 150px;
+  }
+
+  .backBtn
+  {
+    text-align: start;
+    margin-left: 60px;
+  }
+
+  .backBtnBack{
+    background-color: #EB539C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .backBtn 
+  {
+
+    background-color: aliceblue;
+  }
+
+
+  /* date and time */
+
+  /* Bootstrap css */
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+/* Google Material icons */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* Propeller css */
+@import "dist/css/propeller.min.css";
+
+/* Bootstrap datetimepicker */
+@import "datetimepicker/css/bootstrap-datetimepicker.css";
+
+/* Propeller datetimepicker */
+@import "datetimepicker/css/pmd-datetimepicker.css";
