@@ -17,6 +17,9 @@
           <!-- TITLE  1 -->
 
           <br>
+
+          {% for i in CompletedListModel %}
+
           <div class="msg">
           <p>Previously completed Tasks:</p>
           </div>
@@ -24,10 +27,10 @@
           <div class="container-fluid  bodyColor">
             <div class="row">
               <div class="col-3 listMargin">
-                <p class="userToDo ">Task 1</p>
+                <p class="userToDo ">{i.title}</p>
               </div>
               <div class="col-6 listMargin">
-                <p class="userToDo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p class="userToDo">{i.description}</p>
               </div>
               <div class="col-2 listMargin listMargin">
                 <div class="iconsView cmpBtn">
@@ -37,48 +40,9 @@
             </div>
           </div>
 
+          {% endfor %}
 
-          <!-- TITLE 2 -->
-
-          <br><br>
           
-          <div class="container-fluid  bodyColor">
-            <div class="row">
-              <div class="col-3 listMargin">
-                <p class="userToDo ">Task 1</p>
-              </div>
-              <div class="col-6 listMargin">
-                <p class="userToDo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-              <div class="col-2 listMargin listMargin">
-                <div class="iconsView cmpBtn">
-                    <button class="btn CompletedBtn"><i class="fa fa-trash remove" aria-hidden="true"></i></button>
-                    </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Title 3 -->
-
-          <br><br>
-
-          <div class="container-fluid  bodyColor">
-            <div class="row">
-              <div class="col-3 listMargin">
-                <p class="userToDo ">Task 1</p>
-              </div>
-              <div class="col-6 listMargin">
-                <p class="userToDo">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </div>
-              <div class="col-2 listMargin listMargin">
-                <div class="iconsView cmpBtn">
-                    <button class="btn CompletedBtn"><i class="fa fa-trash remove" aria-hidden="true"></i></button>
-                    </div>
-              </div>
-            </div>
-          </div>
-
           <br> <br> <br>
 
           <div class="pageLink disFlex">

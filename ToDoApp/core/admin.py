@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import AddToListModel
+from .models import *
+
 
 # Register your models here.
 class newList(admin.ModelAdmin):
@@ -10,3 +11,10 @@ class newList(admin.ModelAdmin):
 
 
 admin.site.register(AddToListModel, newList)
+
+
+class cmpList(admin.ModelAdmin):
+    list_display = ('title', 'description')
+
+
+admin.site.register(CompletedListModel, cmpList)

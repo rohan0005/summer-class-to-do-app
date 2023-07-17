@@ -14,5 +14,5 @@ function goToView(){
 
 function goToCompleteList()
 {
-    window.location.href = '/completedTodo/'
+    window.location.href = '/completedList/'
 }
