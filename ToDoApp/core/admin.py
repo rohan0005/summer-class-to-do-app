@@ -18,3 +18,4 @@ class cmpList(admin.ModelAdmin):
 
 
 admin.site.register(CompletedListModel, cmpList)
+

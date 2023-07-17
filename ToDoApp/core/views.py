@@ -72,22 +72,41 @@ def viewToDo(request):
 
 
 def deleteToDo(request, id):
-    
     dele = AddToListModel.objects.get(id=id)
     dele.delete()
     
     return redirect('viewToDo')
 
 
+
+def deleteFromComplete(request, id):
+    dele = CompletedListModel.objects.get(id=id)
+    dele.delete()
+    
+    return redirect('completedList')
+
+
+
 def completedTodo(request, id):
     
     comp = AddToListModel.objects.get(id=id)
-    
-    
+
      # Creating new completed task instance
     completed_task = CompletedListModel(title=comp.title, description=comp.description)
     completed_task.save()
     
+    comp.delete()
+    
+    
+    
+    
+    
+    return redirect('viewToDo')
+
+    
+ 
+ 
+def completedList(request):
     
     
     
@@ -126,14 +145,9 @@ def completedTodo(request, id):
         
     }  
     
-    return redirect('viewToDo')
-
     
- 
- 
-def completedList(request):
     
-    return  render(request=request, template_name='completedList.html')
+    return  render(request=request, template_name='completedList.html', context=context)
     
  
  
