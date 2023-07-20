@@ -16,3 +16,4 @@ function goToCompleteList()
 {
     window.location.href = '/completedList/'
 }
+
