@@ -16,4 +16,5 @@ urlpatterns =[
     # for updating data
     
     path('addtodolist/<int:id>/', views.updateToDoList, name='addtodolist'),
+
 ]

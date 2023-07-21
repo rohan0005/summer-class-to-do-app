@@ -22,14 +22,22 @@ def index(request):
 
 def addtodolist(request):
 
-    if request.method=='POST':    
+    if request.method=='POST':  
         
          title=request.POST.get('title')
          priorityIs=request.POST.get('priorityIs')
          endDate_str = request.POST.get('endDate')
          description=request.POST.get('description')
+         
+         try:
+            # Try parsing the date using the original format '%H:%M %d/%m/%Y'
+            endDate = datetime.strptime(endDate_str, '%H:%M %d/%m/%Y')
+         except ValueError:
+            # If the original format doesn't match, try parsing it as '%H:%M %m/%d/%Y'
+            endDate = datetime.strptime(endDate_str, '%H:%M %m/%d/%Y')
 
-         endDate = datetime.strptime(endDate_str, '%H:%M %m/%d/%Y').strftime('%Y-%m-%d %H:%M')
+         endDate = endDate.strftime('%Y-%m-%d %H:%M')
+        #  endDate = datetime.strptime(endDate_str, '%H:%M %m/%d/%Y').strftime('%Y-%m-%d %H:%M')
 
          s= AddToListModel(title=title, priorityIs=priorityIs, endDate=endDate, description=description)
          s.save()
@@ -164,4 +172,8 @@ def updateToDoList(request, id):
     
     return render(request, 'addToDoList.html', {'data': data})
     
+def updateToDoList_btn(request, id):
+    list_id = AddToListModel.objects.get(id=id)
+    
+    return render(request, 'addToDoList.html')
     

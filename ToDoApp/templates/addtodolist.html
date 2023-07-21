@@ -63,10 +63,9 @@
 
             <div class="endDate">
                 {% if data != "" %}
-                <input required name="endDate" id="input" width="234" />
+                <input required name="endDate" id="input" width="234" value="{{ data.endDate|date:'H:i d/m/Y'}}" />
                 {% else %}
                 <input value="{{ data.endDate }}" required name="endDate" id="input" width="234" />
-                {{ data.endDate }}
                 {% endif %}
 
 
@@ -85,15 +84,15 @@
 
         <div class="titleDiv">
             <label>Description</label>
-
-            {% if data != "" %}
-            <div class="right_item"><textarea required name="description" placeholder="Short Description" class="desc"
-                id="exampleFormControlTextarea1" rows="3"   value="{{ data.description }}"></textarea></div>
-            {% else %}
-            <div class="right_item"><textarea required name="description" placeholder="Short Description" class="desc"
-                id="exampleFormControlTextarea1" rows="3"></textarea></div>
-            {% endif %}
-
+            <div class="right_item">
+                {% if data != "" %}
+                <textarea required name="description" placeholder="Short Description" class="desc"
+                id="exampleFormControlTextarea1" rows="3">{{ data.description }}</textarea>
+                {% else %}
+                <textarea required name="description" placeholder="Short Description" class="desc"
+                id="exampleFormControlTextarea1" rows="3"></textarea>
+                {% endif %}
+            </div>
         </div>
 
 </div>
@@ -105,8 +104,10 @@
         <button onclick="goToHome()" type="button" class="backBtnBack">Back</button>
     </div>
 
+    
+
     <div>
-    <input type="submit" name="save" value="submit" class="addtolist">
+        <input type="submit" name="save" value="submit" class="addtolist">
     </div>
     
 </div>
